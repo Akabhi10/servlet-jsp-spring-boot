@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>User Registration Form</h2>
+    <form action="register" method="post">
+        <p>Full name: <input type="text" name="fullname" required></p>
+        <p>E-mail: <input type="email" name="email" required></p>
+        <p>Password: <input type="password" name="password" required></p>
+        <p>Birthday (yyyy-mm-dd): <input type="date" name="dob"></p>
+
+        <p>Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </p>
+
+        <p>Profession:
+            <select name="profession">
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Manager">Manager</option>
+            </select>
+        </p>
+
+        <p>Married?
+            <input type="checkbox" name="married" value="Yes">Yes
+        </p>
+
+        <p>Note:<br>
+            <textarea name="note" rows="4" cols="30"></textarea>
+        </p>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
